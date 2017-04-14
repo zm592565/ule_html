@@ -1,0 +1,21 @@
+@charset "utf-8";
+/*
+ * 公用样式
+ * 
+ * */
+
+/*100%背景box*/
+.box_content_person{
+	background: #f9f7f7 url(../img/person_bj.jpg) no-repeat top center;
+	background-size: 100% 500px;
+}
+
+.pt-50{
+	padding-top: 50px;
+}
+.pt-100{
+	padding-top: 100px;
+}
+.pb-50{
+	padding-bottom: 50px;
+}

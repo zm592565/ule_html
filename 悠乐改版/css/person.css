@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*
+ * 项目名称：悠乐地界
+ * 开发时间：2016.11.27
+ * 开发人：344822559@qq.com
+ * */
+.person_page_box{
+	width: 1200px;
+	margin: 0 auto;
+	background: white;
+	position: relative;
+	
+}
+.page_info{
+	width: 514px;
+	padding: 50px 40px;
+	padding-left: 300px;
+	border-right: 1px solid #dce0e0;
+	position: relative;
+}
+.page_info .face_user{
+	width: 220px;
+	height: 220px;
+	position: absolute;
+	left: 40px;
+	top: 50px;
+}
+
+.person_info{
+	width: 255px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 50px 45px;
+	min-height: 500px;
+}
