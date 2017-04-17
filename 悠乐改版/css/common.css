@@ -10,6 +10,26 @@
 	background-size: 100% 500px;
 }
 
+
+/*首页导航固顶阴影*/
+.header_shadow_active{
+	box-shadow:0px 1px 2px #d2d2d2;
+	-moz-box-shadow: 0px 1px 2px #d2d2d2;
+	-webkit-box-shadow: 0px 1px 2px #d2d2d2;
+}
+
+.header_shadow_none{
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	moz-box-shadow: none;
+}
+
+.box_1200{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
 .pt-50{
 	padding-top: 50px;
 }
