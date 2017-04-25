@@ -27,17 +27,16 @@
 
 .ulehelp_box-gray{
 	background: #fafafa;
-	
 }
 
 
 .left_help{
 	float: left;
-	width: 788px;
+	width: 820px;
 }
 .right_help{
 	float: right;
-	width: 375px;
+	width: 340px;
 }
 
 .left_help ul{
@@ -75,12 +74,12 @@
 
 .ule_box_left{
 	float: left;
-	width: 788px;
+	width: 820px;
 	min-height: 450px;
 }
 .ule_box_left dl{
 	position: relative;
-	width: 756px;
+	width: 788px;
 	border: 1px solid #eeeeee;
 	background: white;
 	clear: both;
@@ -184,7 +183,7 @@
 }
 .ule_box_right{
 	position: relative;
-	width: 375px;
+	width: 320px;
 }
 .ule_box_right .help_reg{
 	height: 184px;

@@ -39,3 +39,7 @@
 .pb-50{
 	padding-bottom: 50px;
 }
+
+.border-b{
+	border-bottom: 1px dotted #eee;
+}
