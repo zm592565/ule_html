@@ -27,6 +27,8 @@
 		<script type="text/javascript" src="lib/layer/layer.js" ></script>
 		<script type="text/javascript" src="lib/navfix/navFixed.js" ></script>
 		<script type="text/javascript" src="js/header.js" ></script>
+		<script type="text/javascript" src="js/askshow.js" ></script>
+		<script type="text/javascript" src="js/common.js" ></script>
 	</head>
 	<body>
 		<div id="top">
@@ -93,7 +95,7 @@
 								<div class="answer"><a href="#">0</a>个回答</div>
 								<div class="read"><a href="#">8</a>人浏览</div>
 								<div class="f-r">
-									<button class="btn size-M btn-success">回答问题</button>
+									<button id="ask" class="btn size-M btn-success">回答问题</button>
 									<button class="btn size-M btn-secondary">关注问题</button>
 								</div>
 							</div>
@@ -118,6 +120,12 @@
 	      						<div class="mb-20 clearfix">
 	      							<div class="add_ask f-l">添加回答</div>
 	      							<div class="do_report f-r">举报</div>
+	      							<div class="clearfix"></div>
+	      							<div class="ask_add_answer pt-10 pb-10 pl-10 pr-10 clearfix mt-10">
+	      								<input type="text" value="回复 123456：" style="font-size: 12px;" class="input-text add_send"></input>
+	      								<div class="text-l f-l text_num"><span>0</span>/500 字</div>
+	      								<button class="btn size-M mt-10 btn-secondary f-r">发布</button>
+	      							</div>
 	      						</div>
 	      						<div class="border-b"></div>
       						</div>
@@ -138,11 +146,19 @@
 									3购物金额若大于卡余额是否可以用现金或信用卡支付余额<br />
 	      						</div>
 	      						<div class="mb-20 clearfix">
-	      							<div class="add_ask f-l">添加回答</div>
+	      							<div class="add_ask f-l">追加评论</div>
 	      							<div class="do_report f-r">举报</div>
+	      							<div class="clearfix"></div>
+	      							<div class="ask_add_answer pt-10 pb-10 pl-10 pr-10 clearfix mt-10">
+	      								<input type="text" value="回复 zm592565：" style="font-size: 12px;" class="input-text dis_b add_send"></input>
+	      								<div class="text-l f-l text_num"><span>0</span>/500 字</div>
+	      								<button class="btn size-M mt-10 btn-secondary f-r">发布</button>
+	      							</div>
 	      						</div>
 	      						<div class="border-b"></div>
       						</div>
+      						
+      						<div id="answer_box" style="height: 400px; background: red;">dasdsad</div>
       					</div>
       					
       					
