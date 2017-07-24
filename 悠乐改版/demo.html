@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>dsads</title>
+		<script type="text/javascript" src="js/1.9.1/jquery.min.js" ></script>
+		<script type="text/javascript">
+			
+			$(function(){
+				$('#test').bind('click',function(){
+					var testVal=$(this).text();
+					$("#aa",parent.document).text(testVal);
+					
+					index = parent.layer.getFrameIndex(window.name);
+					
+					parent.layer.close(index);
+					
+				})
+				
+				
+				
+			})
+			
+			
+		</script>
+	</head>
+	<body>
+		<div id="test">子页面</div>
+	</body>
+</html>
