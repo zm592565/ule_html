@@ -1,0 +1,53 @@
+@charset "utf-8";
+/*
+ * 项目名称：悠乐地接 悠乐幇
+ * 开发时间：2016.11.27
+ * 开发人：344822559@qq.com
+ * */
+.ulehelp_box-gray{
+	background: #fafafa;
+}
+.box-top-border{
+	border-top: 2px solid #3ec1b9;
+}
+.line_show-header{
+	height: 100px;
+	background: #3ec1b9;
+}
+.box_line_show{
+	width: 1100px;
+	margin: 0 auto;
+}
+.line_title{
+	position: relative;
+	padding-right: 200px;
+	margin-top: 20px;
+}
+.line_title p{
+	margin: 0px;
+}
+.line_title .lineshow_pleace{
+	height: 50px;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	text-align: right;
+	line-height: 50px;
+}
+.partner_about{
+	height: 200px;
+	background: #fff;
+	box-shadow: 0px 0px 30px #eee;
+	-webkit-box-shadow: 0px 0px 30px #eee;
+	margin-top: 20px;
+	position: relative;
+	padding-left: 50%;
+}
+.partner_about .left_p{
+	width: 50%;
+	height: 200px;
+	position: absolute;
+	left: 0px;
+	background: #3ec1b9;
+	top: 0px;
+}
