@@ -1,0 +1,178 @@
+@charset "utf-8";
+/*
+ * 项目名称：悠乐地接 悠乐幇
+ * 开发时间：2016.11.27
+ * 开发人：344822559@qq.com
+ * */
+
+.member_menu{
+	height: 100px;
+	background: #32e4da;
+}
+.member_logo{
+	width: 850px;
+	height: 100px;
+	background: url(../img/member_logo.png) no-repeat left center;
+	margin: 0 auto;
+	padding-left: 250px;
+}
+.member_logo ul{
+	display: block;
+	height: 100px;
+	float: left;
+}
+.member_logo ul li{
+	float: left;
+	display: block;
+	height: 100px;
+	position: relative;
+	padding: 0px;
+}
+.member_logo ul li a{
+	line-height: 100px;
+	padding: 0px 30px;
+	color: white;
+	font-size: 16px;
+}
+
+.member_logo ul li a:hover{
+	/*text-decoration: none;*/
+}
+
+
+.member_logo ul li .num_message{
+	position: absolute;
+	display: inline-block;
+	top: 20px;
+	left: 65px;
+	background: #fff;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	min-width: 24px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border-bottom-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+}
+
+
+
+
+.send_message{
+	height: 44px;
+	float: right;
+	margin-top: 28px;
+	display: block;
+	background: #ff7473;
+	padding: 0px 50px;
+	line-height: 44px;
+	font-size: 16px;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	color: white;
+}
+.send_message:hover{
+	text-decoration: none;
+	color: white;
+	background: #ef6160;
+}
+.box_line_show{
+	width: 1100px;
+	margin: 0 auto;
+}
+
+.ulehelp_box-gray{
+	background: #fafafa;
+	padding: 40px 0px;
+	position: relative;
+}
+.member_content_box{
+	width: 800px;
+	border: 1px solid #eee;
+	margin: 0px auto;
+	padding-right: 300px;
+	position: relative;
+	background: #fff;
+	min-height: 600px;
+}
+
+.member_nav{
+	width: 300px;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	background: #f8f8f8;
+	border-left: 1px solid #eee;
+}
+.member_nav a{
+	display: block;
+	font-size: 15px;
+	padding-left: 20px;
+	line-height: 40px;
+	border-bottom: 1px solid #eee;
+	box-shadow: 0px 1px 1px #fff;
+	text-decoration: none;
+}
+.member_nav a i{
+	color: #666;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.member_nav a:hover{
+	background: #dedede;
+	color: #666;
+}
+.member_nav a.active{
+	background: #777;
+	color: white;
+}
+.member_nav a.active i{
+	color: white;
+}
+.member_nav a span{
+	border-radius: 10px;
+	min-width: 40px;
+	height: 20px;
+	line-height: 20px;
+	color: white;
+	background: #ccc;
+	margin-left: 8px;
+	font-size: 10px;
+	padding: 2px 10px;
+	font-family: arial;
+}
+
+
+.member_left_box{
+	min-height: 200px;
+	display: none;
+}
+.member_left_box_block{
+	display: block;
+}
+
+.member_left_box .left_title{
+	line-height: 60px;
+	height: 60px;
+	font-size: 16px;
+	border-bottom: 1px solid #eee;
+	display: block;
+}
+.member_left_box .left_title li{
+	float: left;
+	margin-left: 10px;
+	padding: 10px 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.member_left_box .left_title li.active{
+	border-radius: 2px;
+	background: #eee;
+	-webkit-border-radius: 2px;
+}
+.member_left_box .left_li_box{
+	display: none;
+}

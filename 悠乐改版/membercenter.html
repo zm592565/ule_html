@@ -6,7 +6,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
-		<title>悠乐-搭伴游详情</title>
+		<title>悠乐-会员中心</title>
 		<!--[if lt IE 9]>
 		<script type="text/javascript" src="lib/html5.js"></script>
 		<script type="text/javascript" src="lib/respond.min.js"></script>
@@ -15,7 +15,7 @@
 		<link rel="stylesheet" type="text/css" href="css/H-ui/H-ui.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/H-ui/iconfont/iconfont.css" />
 		<link rel="stylesheet" href="css/header.css" />
-		<link rel="stylesheet" href="css/partnershow.css" />
+		<link rel="stylesheet" href="css/membercenter.css" />
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/footer.css" />
 		<!--[if IE 6]>
@@ -24,10 +24,9 @@
 		<![endif]-->
 		<script type="text/javascript" src="js/1.9.1/jquery.min.js" ></script>
 		<script type="text/javascript" src="lib/layer/layer.js" ></script>
-		<script type="text/javascript" src="lib/navfix/navFixed.js" ></script>
-		<script type="text/javascript" src="js/header.js" ></script>
+		<link rel="stylesheet" href="lib/iconfront/iconfont.css" />
 		<link rel="stylesheet" href="css/animate/animate.min.css" />
-		<script type="text/javascript" src="js/lineshow.js" ></script>
+		<script type="text/javascript" src="js/membercenter.js" ></script>
 	</head>
 	<body class="animated fadeInDown">
 		<div id="top">
@@ -41,34 +40,84 @@
 				</ul>
 			</div>
 		</div>
-		<div id="header">
-		<div class="top_box nav">
-			<a class="logo" href="./"></a>
-			<div class="menu">
-				<a href="#">首页</a>
-				<a href="#">地接圈</a>
-				<a href="#">晒行程</a>
-				<a href="#">搭伴游</a>
-				<a href="#">悠乐帮</a>
+		<div class="member_menu">
+			<div class="box_line_show">
+				<div class="member_logo">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">账户设置</a></li>
+						<li>
+							<a href="">消息</a>
+							<div class="num_message">8</div>
+						</li>
+					</ul>
+					<a class="send_message" href="#">发布地接</a>
+				</div>
 			</div>
-			<a class="btn_write f-16" href="#">发布地接</a>
-		</div>
 		</div>
 		
-
-      	<div class="ulehelp_box-gray box-top-border">
-      		<div class="box_line_show clearfix pt-20 pb-20 animated bounceInLeft">
-      			<div class="line_title">
-      				<p class="f-20 lh-30">陕西妹子泰国7日游求搭伙</p>
-      				<p class="f-12 c-999 lh-20"><span class="pr-10">浏览量:2556</span><span>发布日期:2017/07/21</span></p>
+		
+      	<div class="ulehelp_box-gray">
+      		<div class="member_content_box clearfix animated bounceInLeft">
+      			<div class="member_nav">
+      				<a class="active" href="javascript:;"><i class="iconfont icon-tubiaozhizuomoban"></i>我的发布<span>20</span></a>
+      				<a href="#"><i class="iconfont icon-xiaoxi"></i>我的预约</a>
+      				<a href="#"><i class="iconfont icon-geren2"></i>我的资料</a>
+      				<a href="#"><i class="iconfont icon-news"></i>消息</a>
+      				<a href="#"><i class="iconfont icon-fensi1"></i>粉丝</a>
+      				<a href="#"><i class="iconfont icon-guanzhu2"></i>关注<span>20</span></a>
       			</div>
-      			
-      			<div class="partner_about">
-      				<div class="left_p">
-      					
-      				</div>
-      			</div>
-      		</div>		
+      			<div class="member_left_box member_left_box_block">
+	      			<ul class="left_title">
+	      				<li class="active">地接线路</li>
+	      				<li>搭伙游</li>
+	      				<li>悠乐幇</li>
+	      			</ul>
+	      			<div class="left_li_box" style="display: block;">
+	      				1
+	      			</div>
+	      			<div class="left_li_box">
+	      				2
+	      			</div>
+	      			<div class="left_li_box">
+	      				3
+	      			</div>
+	      		</div>
+	      		<div class="member_left_box">
+	      			<p class="left_title pl-20">我的预约</p>
+	      			<div class="clearfix">
+	      				的撒多撒多撒 
+	      			</div>
+	      		</div>
+	      		<div class="member_left_box">
+	      			<p class="left_title pl-20">我的资料</p>
+	      			<div class="clearfix">
+	      				我的资料 
+	      			</div>
+	      		</div>
+      			<div class="member_left_box">
+	      			<p class="left_title pl-20">消息</p>
+	      			<div class="clearfix">
+	      				消息 
+	      			</div>
+	      		</div>
+      			<div class="member_left_box">
+	      			<p class="left_title pl-20">粉丝</p>
+	      			<div class="clearfix">
+	      				我的粉丝 
+	      			</div>
+	      		</div>
+      			<div class="member_left_box">
+	      			<p class="left_title pl-20">关注</p>
+	      			<div class="clearfix">
+	      				我的关注 
+	      			</div>
+	      		</div>
+      		</div>
+      		
+      		
+      		
+      		
       	</div>
 		
 		
