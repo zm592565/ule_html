@@ -32,7 +32,7 @@ $(function(){
 	/*统计添加评论字数*/
 	$('.ask_cimmit .ask_add_answer .add_send').bind('input propertychange',function(){
 		var nowtext=$(this).val().length;
-		checkTextLength(nowtext,500,$(this).siblings('.text_num').find('span'))
+		checkTextLength(nowtext,20,$(this).siblings('.text_num').find('span'))
 	})
 	
 })

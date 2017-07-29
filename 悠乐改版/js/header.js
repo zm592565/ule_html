@@ -6,6 +6,8 @@
 
 $(function(){
 	
+	
+	
 	/*固顶顶部导航js*/
 	$('#header').navFixed();
 	   $(window).scroll(function (){
