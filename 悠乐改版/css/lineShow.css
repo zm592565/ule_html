@@ -1,0 +1,264 @@
+@charset "utf-8";
+/*
+ * 项目名称：悠乐地接 悠乐幇
+ * 开发时间：2016.11.27
+ * 开发人：344822559@qq.com
+ * */
+.ulehelp_box-gray{
+	background: #fafafa;
+}
+.box-top-border{
+	border-top: 2px solid #3ec1b9;
+}
+.line_show-header{
+	height: 100px;
+	background: #3ec1b9;
+}
+.box_line_show{
+	width: 1100px;
+	margin: 0 auto;
+}
+.line_title{
+	position: relative;
+	padding-right: 200px;
+	margin-top: 20px;
+}
+.line_title p{
+	margin: 0px;
+}
+.line_title .lineshow_price{
+	height: 50px;
+	right: 0px;
+	top: 0px;
+	position: absolute;
+	text-align: right;
+	line-height: 50px;
+}
+.line_simple_info{
+	margin-top: 20px;
+	padding-left: 285px;
+	min-height: 170px;
+	background: #fff;
+	position: relative;
+	box-shadow: 0px 0px 30px #eee;
+	-webkit-box-shadow: 0px 0px 30px #eee;
+}
+.line_simple_info .line_thumb{
+	width: 285px;
+	height: 170px;
+	background: #ccc;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+}
+.line_simple_info .line_about{
+	height: 130px;
+	padding:20px;
+	position: relative;
+}
+.line_simple_info .line_about .line_add_order{
+	height: 50px;
+	padding-right: 200px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: #fafafa;
+}
+.line_simple_info .line_about .line_add_order span{
+	font-size: 24px;
+	line-height: 50px;
+	color: orangered;
+}
+.line_simple_info .line_about .line_add_order button{
+	height: 50px;
+	width: 200px;
+	background: #EC7357;
+	border: 0px;
+	margin: 0px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	font-size: 24px;
+	color: #fff;
+	cursor: pointer;
+}
+.line_simple_info .line_about .line_add_order button:hover{
+	background: #dc5334;
+}
+.line_simple_info .line_about .line_add_order .send_data{
+	position: absolute;
+	right: 220px;
+	top: 0px;
+	line-height: 50px;
+	text-align: right;
+}
+
+.line_simple_info .line_about .line_description{
+	background: url(../img/lineshow_left_fu.png) no-repeat left top;
+	padding-left: 30px;
+}
+.line_simple_info .line_about .line_description .line_right_fu{
+	background: url(../img/lineshow_right_fu.png) no-repeat right bottom;
+	padding-right: 30px;
+	line-height: 24px;
+	height: 48px;
+	overflow: hidden;
+	font-size: 14px;
+}
+.line_simple_info .line_about .start_city{
+	background: url(../img/lineshow-warning.png) no-repeat 30px center;
+	line-height: 30px;
+	font-size: 14px;
+	padding-left: 47px;
+	color: #ec7357;
+	margin-top: 5px;
+}
+.line_show_content{
+	margin-top: 30px;
+	background: #fff;
+	box-shadow: 0px 0px 30px #eee;
+	-webkit-box-shadow: 0px 0px 30px #eee;
+	padding-bottom: 30px;
+	position: relative;
+	padding-top: 70px;
+	padding-left: 30px;
+	padding-right: 300px;
+	min-height: 850px;
+}
+.line_show_content ul{
+	display: block;
+	height: 50px;
+	border-bottom: 2px solid #eee;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+}
+.line_show_content ul li{
+	float: left;
+	display: block;
+	padding: 0px 20px;
+	line-height: 50px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.line_show_content ul li.active{
+	border-bottom: 2px solid #3ec1b9;
+	position: relative;
+	color: #3ec1b9;
+	
+}
+.line_show_content ul li.active:after{
+	position: absolute;
+	bottom: 0px;
+	content: "";
+	left: 50%;
+	margin-left: -3px;
+	width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #3ec1b9;
+    z-index: 999;
+}
+.line_show_content .content{
+	font-size: 14px;
+}
+
+.line_show_content .sendUser_line{
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	width: 270px;
+	
+	
+}
+.line_show_content .sendUser_line .user_info{
+	background: #f2f8fb;
+	border: 1px dotted #cde5f1;
+}
+
+.sendUser_line .user_info img{
+	clear: both;
+	display: block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	margin: 0 auto;
+	border: 5px solid #f5f5f5;
+	margin-top: -35px;
+}
+.sendUser_line .user_info button{
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 44px;
+	background: #fe821e;
+	border: none;
+	box-shadow: 0px 10px 20px #ffe0ca;
+	-webkit-box-shadow: 0px 10px 20px #ffe0ca;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	color: white;
+	font-size: 14px;
+	margin-bottom: -22px;
+}
+.sendUser_line .news_line{
+	position: relative;
+}
+.sendUser_line .news_line p{
+	border-bottom: 2px solid #eee;
+	padding-bottom: 10px;
+}
+.sendUser_line .news_line dl{
+	position: relative;
+	display: block;
+	padding-left: 80px;
+	height: 100px;
+	border-bottom: 1px dotted #ddd;
+}
+.sendUser_line .news_line dl:last-child{
+	border-bottom: none;
+}
+.sendUser_line .news_line dl dt{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 0px;
+	top: 10px;
+	background: red;
+	bottom: 10px;
+	overflow: hidden;
+}
+.sendUser_line .news_line dl dd{
+	display: block;
+	padding: 10px 0px;
+	padding-left: 10px;
+}
+.sendUser_line .news_line dl dd p{
+	border: none;
+	padding: 0px;
+	font-size: 14px;
+	line-height: 18px;
+	height: 54px;
+	max-height: 54px;
+	margin: 0px;
+	overflow-y: hidden;
+}
+.sendUser_line .news_line dl dd h3{
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	padding-top: 6px;
+	color: orangered;
+}
+.sendUser_line .news_line dl dd h3 small{
+	padding-left: 5px;
+}
+.sendUser_line .news_line dl a:hover{
+	text-decoration: none;
+}
