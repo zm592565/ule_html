@@ -19,5 +19,22 @@ $(function(){
 	})
 	
 	
+	/*弹出消息对话框*/
+	$('.talk-box dl dd .talk_layer').on('click',function(){
+		layer.open({
+			type: 2,
+			title: false,
+			closeBtn: 1,
+			fixed:true,
+			area:['600px','70%'],
+			shadeClose: true,
+			scrollbar:false,
+			resize:false,
+			content: 'talk_show.html'
+		})
+	})
+	
+	
+	
 	
 })
