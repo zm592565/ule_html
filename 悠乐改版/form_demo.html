@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="lib/layui/css/layui.css" />
+	</head>
+	<body>
+		
+	<form class="layui-form" action="" style="margin: 100px;">
+  	<div class="site-demo-upload">
+	  <input type="file" name="file" id="fileuplaad" lay-ext="jpg|png|gif" class="layui-upload-file">
+	</div>
+  <div class="layui-form-item">
+    <label class="layui-form-label">联动选择框</label>
+    <div class="layui-input-inline">
+      <select name="quiz1" lay-filter="selectTest">
+        <option value="">请选择省</option>
+        <option value="浙江省" selected="">浙江省</option>
+        <option value="江西省">江西省</option>
+        <option value="福建省">福建省</option>
+      </select>
+    </div>
+    <div class="layui-input-inline">
+      <select name="quiz2">
+        <option value="">请选择市</option>
+        <option value="杭州">杭州</option>
+        <option value="宁波" disabled="">宁波</option>
+        <option value="温州">温州</option>
+        <option value="温州">台州</option>
+        <option value="温州">绍兴</option>
+      </select>
+    </div>
+    <div class="layui-input-inline">
+      <select name="quiz3">
+        <option value="">请选择县/区</option>
+        <option value="西湖区">西湖区</option>
+        <option value="余杭区">余杭区</option>
+        <option value="拱墅区">临安市</option>
+      </select>
+    </div>
+  </div>
+  
+  <div class="layui-form-item">
+    <div class="layui-input-block">
+      <button class="layui-btn" lay-submit="" lay-filter="demo1">立即提交</button>
+      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+    </div>
+  </div>
+</form>
+
+          
+<script type="text/javascript" src="lib/layui/layui.js" ></script>
+	
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+<script>
+layui.use(['form', 'layedit', 'laydate','jquery','upload'], function(){
+  var form = layui.form()
+  ,layer = layui.layer
+  ,$ = layui.jquery
+  ,layedit = layui.layedit
+  ,laydate = layui.laydate;
+  
+  
+    /*图片上传*/
+	layui.upload({
+	  elem:'#fileuplaad'
+	  ,title: '请上传压缩包吧亲'
+	  ,method:'post'
+	  ,type:'images'
+	  ,url: '上传接口url'
+	  ,ext: 'jpg|png|gif'//设置文件类型
+	  ,before:function(input){
+	  	//返回的参数item，即为当前的input DOM对象
+	  	console.log('文件上传中');
+	  	alert('上传前')
+	  }
+	  ,success: function(res,input){
+	    console.log(input); //上传成功返回值，必须为json格式
+	  }
+	});
+  
+  
+  
+  //创建一个编辑器
+  var editIndex = layedit.build('LAY_demo_editor');
+ 
+  //自定义验证规则
+  form.verify({
+    title: function(value){
+      if(value.length < 5){
+        return '标题至少得5个字符啊';
+      }
+    }
+    ,pass: [/(.+){6,12}$/, '密码必须6到12位']
+    ,content: function(value){
+      layedit.sync(editIndex);
+    }
+  });
+  
+  /*监听*/
+  form.on('switch(switchTest)', function(data){
+    layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
+      offset: '6px'
+    });
+    layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
+  });
+  
+  
+  
+  //监听指定开关
+  form.on('select(selectTest)', function(data){
+  	
+  	
+  	
+  	$('select[name="quiz2"]').empty();
+	var option="<option value='ddd'>ddd</option>";
+	$('select[name="quiz2"]').append(option);
+	console.info(data.value);
+	console.info($(data.elem).val());
+	
+	
+	form.render('select');
+
+  });
+  
+  //监听提交
+  form.on('submit(demo1)', function(data){
+    layer.alert(JSON.stringify(data.field), {
+      title: '最终的提交信息'
+    })
+    return false;
+  });
+  
+  
+  
+  
+  
+});
+</script>
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
